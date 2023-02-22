@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /*
+            conteudo adaptado para tamanhos diferentes de tela
+            */
+
+            min-width: 280px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vitae necessitatibus magnam quam maiores unde aliquam quisquam exercitationem, accusantium eveniet quidem animi, sit quo praesentium consequuntur. Cumque, aliquam! Eos, libero. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio fugit inventore ex sequi totam voluptatibus, beatae neque rerum quas suscipit adipisci. Maiores ducimus quaerat veritatis, nulla ipsum veniam culpa inventore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem esse unde natus nostrum ea minus eum sint ex harum veniam, velit necessitatibus voluptatum voluptatem iusto molestias! Obcaecati, modi. Sint, veritatis?</p>
+        <!-- Ajuste da imagem conforme o tamanho da tela-->
+        <picture>
+            <source media="(max-width: 600px)" srcset="../imagens/irina-blok-pq.jpg">
+            <img src="../imagens/irina-blok.jpg" alt="">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vitae necessitatibus magnam quam maiores unde aliquam quisquam exercitationem, accusantium eveniet quidem animi, sit quo praesentium consequuntur. Cumque, aliquam! Eos, libero. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio fugit inventore ex sequi totam voluptatibus, beatae neque rerum quas suscipit adipisci. Maiores ducimus quaerat veritatis, nulla ipsum veniam culpa inventore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem esse unde natus nostrum ea minus eum sint ex harum veniam, velit necessitatibus voluptatum voluptatem iusto molestias! Obcaecati, modi. Sint, veritatis?</p>
+    </main>
+</body>
+</html>

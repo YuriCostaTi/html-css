@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">opção 1</a></li>
+                <li><a href="#">opção 2</a></li>
+                <li><a href="#">opção 3</a></li>
+                <li><a href="#">opção 4</a></li>
+                <li><a href="#">opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Query</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nesciunt consectetur minus aliquid hic eum officiis totam optio itaque explicabo dolorem, maxime libero fugit ea nobis ut sit atque perferendis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum autem officia sit neque porro commodi in odit? Facilis iure aut soluta voluptas eaque. Placeat libero voluptatibus vero obcaecati explicabo magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, cumque aliquid atque eligendi quasi sint totam earum minima quia beatae quod aliquam. Placeat esse voluptas temporibus alias veniam dolorem?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quisquam rem unde corporis laboriosam eius quidem voluptates repellendus, ex sit, ipsum veritatis at facere expedita? Tenetur esse molestiae at accusamus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quaerat animi maiores delectus, fugiat nam culpa magni atque nisi, veniam laborum dolor et obcaecati praesentium numquam dolorem aperiam corrupti pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam soluta quos reiciendis eos consequuntur impedit voluptatibus nesciunt? Architecto obcaecati neque corporis quos voluptatem illum error nobis, iusto velit excepturi voluptate! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem alias reprehenderit quibusdam excepturi neque nobis quas maxime nemo blanditiis, animi eius officiis ipsam eligendi ex iure atque mollitia? Consequatur, tempore.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eveniet magnam fugit explicabo sint. Omnis autem perspiciatis hic nostrum, cupiditate cum magni doloremque dolorem. Ipsum deleniti atque molestias quisquam quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veniam aliquid, laborum, itaque animi asperiores facilis dolores maxime iste nostrum fugit aut maiores. Recusandae, accusantium voluptatum minus sapiente voluptates non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita suscipit dolore quia? Beatae odit praesentium alias nemo modi officiis accusamus itaque. Eos ab corrupti facere aliquid quo minus neque nostrum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, vitae illum impedit corporis rerum delectus sed accusamus mollitia nihil natus excepturi obcaecati. Accusantium fugiat quod tempore quaerat vitae omnis nobis.</p>
+        </article>        
+    </main>
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block  '
+            }
+        }
+    </script>
+</body>
+</html>
